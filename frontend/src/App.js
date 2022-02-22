@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { onAuthStateChanged } from "firebase/auth";
 
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
@@ -11,11 +12,11 @@ import Login from './Login';
 import Checkout from './Checkout';
 
 function App() {
-  const [{ }, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
     // will only run once when the app component loads
-    auth.onAuthStateChanged(authUser => {
+    onAuthStateChanged(auth, (authUser) => {
       console.log('The user is >>> ', authUser);
 
       if (authUser) {
@@ -31,7 +32,7 @@ function App() {
           user: null,
         })
       }
-    })
+    });
   }, []);
 
   return (

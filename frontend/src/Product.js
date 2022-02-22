@@ -5,7 +5,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function Product({ id, name, price, rating, ratingCount, image }) {
 
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     // dispatch the item to data layer (basket)

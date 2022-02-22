@@ -4,7 +4,7 @@ import { useStateValue } from './StateProvider';
 import StarIcon from '@mui/icons-material/Star';
 
 function CheckoutProduct({ id, name, price, rating, ratingCount, image }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const removeFromCart = () => {
     // remove from cart in data layer
