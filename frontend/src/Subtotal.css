@@ -1,0 +1,28 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.subtotal-title {
+  font-size: 1.25rem;
+}
+.subtotal-gift {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+.subtotal-checkout-btn {
+  align-self: center;
+  background: #f0c14b;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}

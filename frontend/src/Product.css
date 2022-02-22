@@ -1,0 +1,52 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem;
+  padding: 1rem;
+  /* width: 100vw; */
+  max-height: 25rem;
+  min-width: 6.25rem;
+  background: white;
+  z-index: 1;
+}
+
+.product-image {
+  height: 12.5rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-info {
+  height: 6.25rem;
+  align-self: flex-start;
+}
+.product-info-price {
+  margin-top: 0.3125rem;
+  font-weight: 700;
+}
+.product-info-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-info-rating-star {
+  color: darkorange;
+  font-size: 1rem !important;
+}
+.product-info-rating-count {
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.product-button {
+  background: darkorange;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}

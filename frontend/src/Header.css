@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  position: sticky; /* stick to top of page */
+  top: 0;
+  z-index: 100;
+  background: #131921;
+  width: 100vw;
+}
+
+.header-logo {
+  width: 6.25rem;
+  margin: 1rem 1.25rem 0 1.25rem;
+  object-fit: contain;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  /* flex grow/shrink to window size & does not have a basis size */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.header-search-input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.header-search-icon {
+  padding: 0.3125rem;
+  height: 2rem !important;
+  width: 2rem !important;
+  background: #cd9042;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 0.625rem;
+}
+.header-option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.625rem;
+  color: white;
+}
+.header-option-line-1 {
+  font-size: 0.625rem;
+}
+.header-option-line-2 {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.header-option-basket {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+/* .header-option-basket-icon {
+
+} */
+.header-option-basket-count {
+  color: #cd9042;
+}
